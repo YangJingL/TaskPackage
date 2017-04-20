@@ -1,0 +1,65 @@
+@charset "utf-8";
+/**
+* @version:	 		    2016.11.01
+* @createTime: 	 		2016.11.23
+* @updateTime: 			2016.11.23
+* @author:				wuwg
+* @name:  				module-service-nav
+* @rule                 fd-service-nav {'fd-'+'模块名'+其他}
+* @require              依赖reset.css   unit-button.css
+* @description          module-service-nav  style  ，如果是模块的话，那么需要在前面增加模块名字，
+                        所有的样式都在该模块下，防止和其他样式冲突
+                        这里是用的法智里面服务导航的一个例子命名
+                         什么是模块？
+                        例如：一辆车，由轮胎，方向盘，车身等等组成。
+                        这就是一个模块，有自己的功能，由很多元件和组件组成。
+*/
+/**服务导航的**/
+.fd-service-nav-homepage {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width:100%;
+    padding: 10px 60px 0;
+    z-index: 2;
+    box-shadow: 0 10px  10px rgba(191, 199, 203, 0.5);
+    background-color: #fff;
+    overflow: hidden;
+    height: 0;
+    visibility: hidden;
+    transition: height 0.3s 0s linear;
+}
+.fd-service-nav-homepage.active {
+    visibility: visible;
+    height: 290px;
+}
+.fd-service-nav-homepage .fd-service-nav {
+    box-shadow:none;
+}
+/**layout**/
+.fd-service-nav {
+    position: relative;
+    padding: 10px;
+    height: 270px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(191, 199, 203, 0.5);
+    zoom:1;
+}
+.fd-service-nav:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+.fd-service-nav >li {
+    float: left;
+    width: 16.66%;
+    height: 100%;
+    border-right: 1px solid #d5dde1;
+    box-sizing: border-box;
+}
+.fd-service-nav >li:last-child {
+    border-right: none;
+}
+

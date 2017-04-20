@@ -1,0 +1,193 @@
+@charset "utf-8";
+/**
+* @version:	 		    2016.11.01
+* @createTime: 	 		2016.11.23
+* @updateTime: 			2016.11.23
+* @author:				wuwg
+* @name:  				unit  元件
+* @rule                  fd-btn {‘fd-’+元件名字}
+* @description          unit button   style   这里是一个按钮元件的样式，
+                        什么是元件？
+                         元件就是可以任用到任何地方，不依赖任何东西的存在
+                         例如：一个钉子，可以运用于建筑，也可以用于船，车的建造等等
+ */
+.fd-btn {
+    display: inline-block;
+    padding: 0 12px;
+    font-weight: normal;
+    color: #333;
+    height: 40px;
+    font: 14px/38px "Microsoft YaHei";
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius:5px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    border: 1px solid transparent;
+    background-image: none;
+    overflow: hidden;
+    outline: none;
+}
+.fd-btn:focus,
+.fd-btn.focus,
+.fd-btn:hover,
+.fd-btn.hover {
+    border-color: #f0f0f0;
+    background-color: #f0f0f0;
+    text-decoration: none;
+}
+
+.fd-btn:active,
+.fd-btn.active {
+    border-color: #f0f0f0;
+    background-color: #f0f0f0;
+}
+
+.fd-btn[disabled],
+.fd-btn.disabled  {
+    pointer-events: none;
+    background-color: gray;
+    border-color: gray;
+}
+
+
+/***fd-btn-link***/
+.fd-btn-link {
+    padding: 0;
+    font-size: 14px;
+    color: #3899ed;
+    background-color: transparent;
+    border-color: transparent;
+}
+.fd-btn-link.active,
+.fd-btn-link:active,
+.fd-btn-link:focus,
+.fd-btn-link.focus,
+.fd-btn-link:hover,
+.fd-btn-link:visited{
+    color: #3899ed;
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: underline;
+}
+.fd-btn-link:active,
+.fd-btn-link:focus,
+.fd-btn-link:visited {
+    text-decoration: none;
+}
+.fd-btn-link[disabled],
+.fd-btn-link.disabled  {
+    pointer-events: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/**大按钮**/
+.fd-btn-lg {  }
+
+/**小按钮**/
+.fd-btn-sm {
+    height: 30px;
+    line-height: 28px;
+}
+
+/**更小按钮**/
+.fd-btn-xs {  }
+
+/**最小按钮**/
+.fd-btn-xxs {  }
+
+/**块级按钮**/
+.fd-btn.block {
+    display: block;
+    width: 100%;
+}
+.fd-btn.inline {
+    display: inline;
+}
+
+/***fd-btn-default***/
+.fd-btn-default {
+    color: #fff;
+    border-color: #53b8ff;
+    background-color: #53b8ff;
+}
+.fd-btn-default:hover,
+.fd-btn-default.hover,
+.fd-btn-default:focus,
+.fd-btn-default.focus {
+    color: #fff;
+    background-color: #39adff;
+    border-color: #39adff;
+}
+.fd-btn-default:active,
+.fd-btn-default.active{
+    color: #fff;
+    border-color: #0094fb;
+    background-color: #0094fb;
+}
+
+.fd-btn-default.disabled,
+.fd-btn-default[disabled] {
+    pointer-events: none;
+    background-color: #53b8ff;
+    border-color: transparent;
+}
+
+.fd-btn-default:active,
+.fd-btn-default.active{
+    color: #fff;
+    border-color: transparent;
+    background-color: #1a8cff;
+}
+
+/***fd-btn-cancle***/
+.fd-btn-cancle {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    line-height: 28px;
+    color: #999;
+    background-color: transparent;
+    border-color: #d5dde1;
+}
+.fd-btn-cancle:focus,
+.fd-btn-cancle.focus {
+    color: #999;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #8ba1ac;
+}
+.fd-btn-cancle:hover {
+    color: #999;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #b1c0c7;
+}
+.fd-btn-cancle:active,
+.fd-btn-cancle.active,
+.open > .dropdown-toggle.fd-btn-cancle {
+    color: #999;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #b1c0c7;
+}
+.fd-btn-cancle:active:hover,
+.fd-btn-cancle.active:hover{
+    color: #999;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #8ba1ac;
+}
+.fd-btn-cancle.disabled,
+.fd-btn-cancle[disabled]{
+    background-color: transparent;
+    border-color: #d5dde1;
+}
+
+.fd-btn-cancle .badge {
+    color: transparent;
+    background-color: #999;
+}

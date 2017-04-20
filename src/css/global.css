@@ -1,0 +1,77 @@
+@charset "utf-8";
+/**
+* @version:	 		    2016.11.01
+* @createTime: 	 		2016.11.23
+* @updateTime: 			2016.11.23
+* @author:				wuwg
+* @name:  				global
+* @description          global ，这里全部可复用的样式，按照分类来， 名字以数子增长顺序增加， 可标明在哪个地方用到了
+ */
+
+/*************************************************\
+                 title
+
+\*************************************************/
+.fd-title-01 {
+    padding-left: 30px;
+    font:14px/40px "Microsoft YaHei";
+    color: #3366cc;
+}
+
+/**
+* 当事人检索中列表标题 用到
+* 当事人检索中列表标题 用到
+*/
+.fd-title-02 {
+    padding-left: 30px;
+    font:14px/40px "Microsoft YaHei";
+    color: #3366cc;
+}
+
+.fd-h3-01{
+    margin-bottom: 10px;
+    font:bold 16px/30px "Microsoft YaHei";
+    color: #333;
+}
+.fd-h3-01 span {
+    color: #ff6600;
+}
+
+.fd-h3-02 {
+    margin-top: 15px;
+    font:700 14px/30px "Microsoft YaHei";
+    color: #333;
+}
+/*************************************************\
+                 hight-light
+
+\*************************************************/
+.fd-high-light {
+    color: #ff0000 ;
+}
+
+.fd_cyrw_bd li,.fd_silde_bd_itme_con li,.fd-rwb-item li {
+    /*width: 12.06%;*/
+    height: 31px;
+    border: 1px solid #c4d2eb;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2.6rem;
+    background: #FFFFFF;
+    margin: 1.463%  0 0 1.463%;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    padding:0 3px;
+}
+.fd-rwb-container:after {
+    display: block;
+    content: '';
+    visibility: hidden;
+    clear: both;
+}
+.fd-rwb-container >div {
+    float: left;
+    margin: 16px ;
+}

@@ -1,0 +1,8 @@
+{
+  "code":200,
+  "success":true,
+  "message":"请求成功",
+  "data":{
+    "name":"司法分析模块"
+  }
+}
