@@ -74,6 +74,20 @@
     font: 13px/31px "microsoft yahei";
     color: #395262;
 }
+.fd-rwb-item li:hover {
+    border: 1px solid #0b91e5;
+}
+.fd-rwb-item >div {
+    background-color: #fff;
+    height: 192px;
+    margin-top: 8px;
+    border: 1px solid #c4d2eb;
+    border-radius: 2px;
+    box-shadow: 0 0px 10px #879daa;
+}
+.fd-rwb-item >div:hover {
+    box-shadow: 0 0px 10px #0b91e5;
+}
 .fd-rwb-container:after {
     display: block;
     content: '';
@@ -86,9 +100,8 @@
     box-sizing: border-box;
     margin: 16px ;
     width: 258px;
-    height: 194px;
-    border: 1px solid #c4d2eb;
-    border-radius: 2px;
+    height: 200px;
+    background: url("../images/icon-bg.png") no-repeat center;
 
 }
 .fd-rwb-container h2 {
@@ -103,19 +116,24 @@
     margin-left: 5px;
 }
 .fd-rwb-container ul{
+    display: none;
     position: absolute;
     width: 258px;
-    left: 258px;
+    left: 216px;
     padding: 0 14px;
 }
 .fd-rwb-container ul.show{
+    display: block;
     left: 0;
+    opacity:1;
 }
 .fd-rw-con {
     position: relative;
     width: 258px;
     height: 141px;
+    /*
     overflow: hidden;
+    */
 }
 .fd-pages {
     position: absolute;
@@ -137,7 +155,7 @@
 .fd-item-del {
     position: absolute;
     right: -13px;
-    top: -13px;
+    top: -5px;
     display: inline-block;
     width: 27px;
     height: 27px;
