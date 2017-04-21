@@ -81,6 +81,7 @@
     clear: both;
 }
 .fd-rwb-container >div {
+    position: relative;
     float: left;
     box-sizing: border-box;
     margin: 16px ;
@@ -88,6 +89,7 @@
     height: 194px;
     border: 1px solid #c4d2eb;
     border-radius: 2px;
+
 }
 .fd-rwb-container h2 {
     height: 36px;
@@ -101,5 +103,43 @@
     margin-left: 5px;
 }
 .fd-rwb-container ul{
+    position: absolute;
+    width: 258px;
+    left: 258px;
     padding: 0 14px;
+}
+.fd-rwb-container ul.show{
+    left: 0;
+}
+.fd-rw-con {
+    position: relative;
+    width: 258px;
+    height: 141px;
+    overflow: hidden;
+}
+.fd-pages {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.fd-pages a {
+    display: inline-block;
+    margin-right: 6px;
+    width: 7px;
+    height: 7px;
+    background-color: #c7d4ec;
+    border-radius: 50%;
+}
+.fd-pages a.select {
+    background-color: #42b1f6;
+}
+.fd-item-del {
+    position: absolute;
+    right: -13px;
+    top: -13px;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: url("../images/icon-del.png") no-repeat center;
 }
