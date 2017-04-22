@@ -50,14 +50,15 @@
     color: #ff0000 ;
 }
 
-.fd_cyrw_bd li,.fd_silde_bd_itme_con li,.fd-rwb-item li {
+.fd_cyrw_bd li,.fd_silde_bd_itme_con li,.fd-rwb-item li ,
+.fd-content li {
     /*width: 12.06%;*/
     height: 31px;
     border: 1px solid #c4d2eb;
     border-radius: 3px;
-    font-size: 1.3rem;
+    font-size: 14px;
     text-align: center;
-    line-height: 2.6rem;
+    line-height: 31px;
     background: #FFFFFF;
     margin: 1.463%  0 0 1.463%;
     float: left;
@@ -101,7 +102,15 @@
     margin: 16px ;
     width: 258px;
     height: 200px;
+
+}
+.fd-rwb-container .fd-rwb-item {
     background: url("../images/icon-bg.png") no-repeat center;
+
+}
+.fd-rwb-container .fd-add-rwb {
+    cursor: pointer;
+    background: url("../images/icon-add-rwb.png") no-repeat center;
 
 }
 .fd-rwb-container h2 {
@@ -120,6 +129,7 @@
     position: absolute;
     width: 258px;
     left: 216px;
+
     padding: 0 14px;
 }
 .fd-rwb-container ul.show{
@@ -153,11 +163,55 @@
     background-color: #42b1f6;
 }
 .fd-item-del {
+    display: none;
     position: absolute;
     right: -13px;
     top: -5px;
-    display: inline-block;
     width: 27px;
     height: 27px;
     background: url("../images/icon-del.png") no-repeat center;
+}
+.fd-over-hide {
+    overflow: hidden;
+}
+/* 增加任务包弹层的样式*/
+.fd-layer-add {
+    position: absolute;
+    top: calc(50% - 252px);
+    left: calc(50% - 398px);
+    width: 796px;
+    height: 504px;
+    z-index: 6;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.fd-layer-add h2 {
+    width: 100%;
+    height: 48px;
+    padding-left: 20px;
+    font: 18px/48px "microsoft yahei";
+    font-weight: bold;
+    color: #fff;
+    background-color: #3572a8;
+}
+.fd-content {
+    width: 100%;
+    height: 450px;
+    background-color: #f7f7f7;
+}
+.fd-drag-con {
+    float: left;
+    height: 450px;
+    width: calc(100% - 268px);
+}
+.fd-drop-con {
+    float: right;
+    width: 268px;
+    height: 450px;
+    background-color: #ebebeb;
+}
+.fd-content li {
+    position: relative;
+    min-width: 98px;
+    max-width: 212px;
 }
